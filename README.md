@@ -1,11 +1,13 @@
 <h1>Dappster!</h1>
 -----------------------------------------------------------------------
+Named: Dappster, not because Napster, but because Dappster is cool.
+------------------------------------------------------------------------
 <h3>Intro</h3>
 Dapp skeleton to build from.
 Built with Geth, Truffle, and React.
 
-Named: Dappster, not because Napster, but because Dappster is cool.
-------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
 <h3>Network instructions </h3>
 Start node: 
 
