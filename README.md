@@ -29,7 +29,7 @@ node express-server.js
 <h3> Block Viewer </h3>
 <h4> Returns recently mined block </h4>
 
-![alt text]https//github.com/rottaj/Dapster/blob/master/block_sc.png?raw=true)
+![alt text](https//github.com/rottaj/Dapster/blob/master/block_sc.png?raw=true)
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3> Problems </h3>
 
