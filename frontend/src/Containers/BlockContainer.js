@@ -19,7 +19,14 @@ export default class BlockContainer extends React.Component {
             socket.emit("request.block")
             socket.on("receive.block", (response) => {
                 console.log("receive.block", response.blockData.number)
-                
+                if (this.state.blocks.length != 0 ){
+                    if (this.state.blocks[this.state.blocks.length-1].number != response.blockData.number) {
+                        this.state.blocks.append(response.blockData)
+                        console.log("STATE BLOCKS", this.state.blocks)
+                    }
+                } else {
+                    this.state.blocks.append(response.blockData)
+                }
             })
         }, 5000)
 
