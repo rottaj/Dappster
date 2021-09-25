@@ -1,12 +1,11 @@
 <h1>Dappster!</h1>
---------------------------------------------------------------------
+-----------------------------------------------------------------------
 <h3>Intro</h3>
-A simple Dapp for exploring your private network.
-
+Dapp skeleton to build from.
 Built with Geth, Truffle, and React.
 
 Named: Dappster, not because Napster, but because Dappster is cool.
---------------------------------------------------------------------
+------------------------------------------------------------------------
 <h3>Network instructions </h3>
 Start node: 
 
@@ -17,15 +16,21 @@ Connect to node:
 
 geth attach http://127.0.0.1:8545
 
-------------------------------------------
+------------------------------------------------------------------------
+<h3> Frontend instructions <h3>
+Start frontend:
 
+cd frontend
+npm start
+
+-------------------------------------------------------------------------
 <h3>Rules <h3>
 <p>
 Rule #1 Don't talk about fight club.
 
 Rule #2 Don't talk about fight club.
 
-Rule #3 Every commit, take a shot of bourbon.
+Rule #3 Every commit = shot of bourbon.
 
 Rule #4 Repeat rule #3 until Dapp or bourbon is finished.
 </p>

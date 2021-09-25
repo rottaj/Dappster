@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import io from 'socket.io-client';
+var socket = io("http://localhost:8080", {
+  withCredentials: false,
+})
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends React.Component {
+
+    connectToSocket = () => {
+        socket.on("connection", () => {
+          console.log("connected to back-end")
+          socket.emit("request.block")
+        })
+        socket.on("receive.block", (response) => {
+          console.log("receive.block", response)
+        })
+    }
+
+    render() {
+        return (
+            <div>
+                {console.log("socket", socket)}
+                {this.connectToSocket()}
+            </div>
+        )
+    }
 }
-
-export default App;
