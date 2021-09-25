@@ -19,7 +19,9 @@ http.listen(8080, () => {
 })
 
 web3.eth.getBlockNumber().then(function(res) {
-    console.log(res)
+    web3.eth.getBlock(res).then(function(blockData) {
+      console.log(blockData)
+    })
 })
 console.log("Socket running on port 8080!")
 io.on("connection", (socket) => {
