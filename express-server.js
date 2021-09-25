@@ -29,5 +29,12 @@ io.on("connection", (socket) => {
     socket.emit("connection", null);
     socket.on("request.block", (req, res) => {
       console.log("nothing")
+
+      web3.eth.getBlockNumber().then(function(res) {
+        web3.eth.getBlock(res).then(function(blockData) {
+        console.log(blockData)
+        socket.emit("receive.block", {blockData: blockData})
+        })
+      })
     })
 })
