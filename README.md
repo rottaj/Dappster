@@ -20,8 +20,12 @@ geth attach http://127.0.0.1:8545
 <h3> Frontend instructions <h3>
 Start frontend:
 
-cd frontend
+<cd frontend
 npm start
+
+<h3> Start express server </h3>
+
+node express-server.js
 
 -------------------------------------------------------------------------
 <h3>Rules <h3>
