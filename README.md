@@ -1,9 +1,9 @@
 <h1>Dappster!</h1>
 -----------------------------------------------------------------------
-Named: Dappster, not because Napster, but because Dappster is cool.
+<h3>Named: Dappster, not because Napster, but because Dappster is cool.</h3>
 ------------------------------------------------------------------------
 <h3>Intro</h3>
-Dapp skeleton to build from.
+Dapp skeleton to build from. <br></br>
 Built with Geth, Truffle, and React.
 
 -----------------------------------------------------------------------------------------------
