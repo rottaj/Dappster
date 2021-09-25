@@ -35,7 +35,7 @@ node express-server.js
 
 If all nodes are shutdown, the data is destroyed... This poses the obvious problem for running your network locally; as the nodes won't be running forever.
 <br></br>
----> Maybe add a mongo instance to save data?
+---> Maybe add a mongo instance to save data? <br></br>
     --> If mongo is added, we could do a lot more.. Adding accounts, transactions, etc.
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>Rules <h3>
