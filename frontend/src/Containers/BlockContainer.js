@@ -11,7 +11,7 @@ export default class BlockContainer extends React.Component {
         blocks: []
     }
 
-    connectToSocket = () => {
+    componentDidMount() {
         socket.on("connection", () => {
           console.log("connected to back-end")
         })
@@ -37,7 +37,7 @@ export default class BlockContainer extends React.Component {
         return (
             <div>
                 Block Container
-                {this.connectToSocket()}
+                {/*this.connectToSocket()*/}
                 <Block blockNumber={1} blockMiner={2}/>
             </div>
         )

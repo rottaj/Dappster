@@ -16,3 +16,13 @@
 17:34:19.910368 version@stat F·[1] S·176B[176B] Sc·[0.25]
 17:34:19.992765 db@janitor F·3 G·0
 17:34:19.992836 db@open done T·106.806183ms
+18:59:33.637015 memdb@flush N·36977 S·3MiB
+18:59:33.674814 memdb@flush created L0@6 N·36977 S·793KiB "loc..seq,v4":"n:\xff..ong,v10854"
+18:59:33.674956 version@stat F·[2] S·793KiB[793KiB] Sc·[0.50]
+18:59:33.694522 memdb@flush committed F·1 T·57.397014ms
+18:59:33.697606 journal@remove removed @3
+18:59:49.992671 table@compaction L0·2 -> L1·0 S·793KiB Q·37315
+18:59:50.028317 table@build created L1@7 N·10833 S·429KiB "loc..seq,v4":"version,v1"
+18:59:50.028472 version@stat F·[0 1] S·429KiB[0B 429KiB] Sc·[0.00 0.00]
+18:59:50.048409 table@compaction committed F-1 S-364KiB Ke·0 D·26146 T·55.627629ms
+18:59:50.049430 table@remove removed @6
