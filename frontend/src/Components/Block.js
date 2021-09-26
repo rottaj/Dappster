@@ -1,4 +1,5 @@
 import { thisBooleanValue } from 'es-abstract';
+import "./Block.css"
 import React from 'react';
 
 export default class Block extends React.Component {
@@ -9,7 +10,8 @@ export default class Block extends React.Component {
 
     render() {
         return (
-            <div>
+            <div class="Block">
+                {console.log("testing block fooooobar")}
                 {"Block Data: " + this.state.blockData}
             </div>
         )

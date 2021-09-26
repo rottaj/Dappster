@@ -28,17 +28,17 @@ export default class BlockContainer extends React.Component {
                     this.state.blocks.push(response.blockData)
                 }
             })
-        }, 5000)
+        }, 30000)
 
     }
 
-
     render() {
         return (
-            <div>
-                Block Container
-                {/*this.connectToSocket()*/}
-                <Block blockNumber={1} blockMiner={2}/>
+            <div className="blockContainer">
+                Dappster container
+                <ul>
+                {this.state.blocks.map((block) => <Block blockNumber={block}/>)}
+                </ul>
             </div>
         )
     }
